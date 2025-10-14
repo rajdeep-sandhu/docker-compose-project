@@ -1,0 +1,5 @@
+services:
+  storefront:
+    build: .
+  database:
+    image: "mysql"
