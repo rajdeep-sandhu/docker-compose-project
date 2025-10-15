@@ -1,5 +1,10 @@
 services:
   storefront:
-    build: .
+    build:
+      context: .
+      args:
+        - region=us-east-1
+    environment:
+      - runtime_env=dev
   database:
     image: "mysql"
