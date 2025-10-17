@@ -13,3 +13,6 @@ services:
       - ./mysql/env_vars
     volumes:
       - ./mysql:/docker-entrypoint-initdb.d:ro
+      - kineteco:/var/lib/mysql:rw
+volumes:
+  - kineteco
