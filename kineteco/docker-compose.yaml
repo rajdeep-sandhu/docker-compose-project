@@ -3,6 +3,8 @@ services:
     build: scheduler/.
     ports:
       - "81:80"
+    profiles:
+      - storefront_services
   storefront:
     build: storefront/.
     ports:
