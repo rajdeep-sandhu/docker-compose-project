@@ -6,6 +6,5 @@
 
 - The project is organised under the `kineteco` directory.
 - `docker-compose.yaml`: Docker Compose file.
-- `Dockerfile`
-- `index.html` and the `kinetico_consumer_files` directory: Website files.
+- `storefront`, `scheduler` and `mysql` files.
 - `./mysql/env_vars`: Environment variables for MySQL, including credentials. In a real world scenario, secrets **should not** be committed to version control.
