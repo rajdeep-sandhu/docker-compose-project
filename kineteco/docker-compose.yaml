@@ -8,12 +8,16 @@ services:
     ports:
       - "80:80"
       - "443:443"
+    depends_on:
+      - database
+    profiles:
+      - storefront_services
   database:
     image: "mysql"
     env_file:
       - ./mysql/env_vars
     volumes:
       - ./mysql:/docker-entrypoint-initdb.d:ro
-      - kineteco:/var/lib/mysql:rw
+      - kineteco:/var/lib/mysql
 volumes:
-  - kineteco
+  kineteco:
