@@ -7,6 +7,7 @@ services:
     build: storefront/.
     ports:
       - "80:80"
+      - "443:443"
   database:
     image: "mysql"
     env_file:
