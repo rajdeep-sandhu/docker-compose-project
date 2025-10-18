@@ -6,7 +6,7 @@ services:
     depends_on:
       - database
     profiles:
-      - storefront_services
+      - scheduling_services
   storefront:
     build: storefront/.
     ports:
