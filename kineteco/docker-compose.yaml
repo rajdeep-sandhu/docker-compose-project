@@ -3,6 +3,8 @@ services:
     build: scheduler/.
   storefront:
     build: storefront/.
+    ports:
+      - "80:80"
   database:
     image: "mysql"
     env_file:
